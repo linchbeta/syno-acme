@@ -100,8 +100,8 @@ updateService () {
   echo 'begin updateService'
   echo 'cp cert path to des'
   if [ `grep -c "$FIND_MAJORVERSION_STR" $FIND_MAJORVERSION_FILE` -ne '0' ];then
-    echo "MajorVersion = 7, use system default python2"
-    python2 ${BASE_ROOT}/crt_cp.py ${CRT_PATH_NAME}
+    echo "MajorVersion = 7, use system default python3"
+    python ${BASE_ROOT}/crt_cp.py ${CRT_PATH_NAME}
   else
     echo "MajorVersion < 7"
     /bin/python2 ${BASE_ROOT}/crt_cp.py ${CRT_PATH_NAME}
