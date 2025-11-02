@@ -1,4 +1,4 @@
-#!/bin/python2
+#!/bin/python
 
 # this script copies cert recorded in INFO file from src to des.
 
